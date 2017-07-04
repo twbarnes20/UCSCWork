@@ -1,0 +1,216 @@
+; TOK_ROOT "<<ROOT>>" (0.0.0) {0}  
+;    TOK_PROTOTYPE "void" (7.28.1) {0}  
+;       TOK_VOID "void" (7.28.1) {0} void  
+;          TOK_DECLID "__assert_fail" (7.28.6) {0} void  
+;       TOK_PARAMLIST "(" (7.28.20) {0}  
+;          TOK_STRING "string" (7.28.21) {1} string  
+;             TOK_DECLID "expr" (7.28.28) {1} string  
+;          TOK_STRING "string" (7.28.34) {1} string  
+;             TOK_DECLID "file" (7.28.41) {1} string  
+;          TOK_INT "int" (7.28.47) {1} int  
+;             TOK_DECLID "line" (7.28.51) {1} int  
+;    TOK_PROTOTYPE "void" (7.29.1) {0}  
+;       TOK_VOID "void" (7.29.1) {0} void  
+;          TOK_DECLID "putb" (7.29.6) {0} void  
+;       TOK_PARAMLIST "(" (7.29.11) {0}  
+;          TOK_INT "int" (7.29.12) {2} int  
+;             TOK_DECLID "b" (7.29.16) {2} int  
+;    TOK_PROTOTYPE "void" (7.30.1) {0}  
+;       TOK_VOID "void" (7.30.1) {0} void  
+;          TOK_DECLID "putc" (7.30.6) {0} void  
+;       TOK_PARAMLIST "(" (7.30.11) {0}  
+;          TOK_INT "int" (7.30.12) {3} int  
+;             TOK_DECLID "c" (7.30.16) {3} int  
+;    TOK_PROTOTYPE "void" (7.31.1) {0}  
+;       TOK_VOID "void" (7.31.1) {0} void  
+;          TOK_DECLID "puti" (7.31.6) {0} void  
+;       TOK_PARAMLIST "(" (7.31.11) {0}  
+;          TOK_INT "int" (7.31.12) {4} int  
+;             TOK_DECLID "i" (7.31.16) {4} int  
+;    TOK_PROTOTYPE "void" (7.32.1) {0}  
+;       TOK_VOID "void" (7.32.1) {0} void  
+;          TOK_DECLID "puts" (7.32.6) {0} void  
+;       TOK_PARAMLIST "(" (7.32.11) {0}  
+;          TOK_STRING "string" (7.32.12) {5} string  
+;             TOK_DECLID "s" (7.32.19) {5} string  
+;    TOK_PROTOTYPE "void" (7.33.1) {0}  
+;       TOK_VOID "void" (7.33.1) {0} void  
+;          TOK_DECLID "endl" (7.33.6) {0} void  
+;       TOK_PARAMLIST "(" (7.33.11) {0}  
+;    TOK_PROTOTYPE "int" (7.34.1) {0}  
+;       TOK_INT "int" (7.34.1) {0} int  
+;          TOK_DECLID "getc" (7.34.5) {0} int  
+;       TOK_PARAMLIST "(" (7.34.10) {0}  
+;    TOK_PROTOTYPE "string" (7.35.1) {0}  
+;       TOK_STRING "string" (7.35.1) {0} string  
+;          TOK_DECLID "getw" (7.35.8) {0} string  
+;       TOK_PARAMLIST "(" (7.35.13) {0}  
+;    TOK_PROTOTYPE "string" (7.36.1) {0}  
+;       TOK_STRING "string" (7.36.1) {0} string  
+;          TOK_DECLID "getln" (7.36.8) {0} string  
+;       TOK_PARAMLIST "(" (7.36.14) {0}  
+;    TOK_PROTOTYPE "[]" (7.37.7) {0}  
+;       TOK_ARRAY "[]" (7.37.7) {0} array  
+;          TOK_STRING "string" (7.37.1) {0} string  
+;          TOK_DECLID "getargv" (7.37.10) {0} string array  
+;       TOK_PARAMLIST "(" (7.37.18) {0}  
+;    TOK_PROTOTYPE "void" (7.38.1) {0}  
+;       TOK_VOID "void" (7.38.1) {0} void  
+;          TOK_DECLID "exit" (7.38.6) {0} void  
+;       TOK_PARAMLIST "(" (7.38.11) {0}  
+;          TOK_INT "int" (7.38.12) {11} int  
+;             TOK_DECLID "status" (7.38.16) {11} int  
+;    TOK_FUNCTION "int" (8.5.1) {0}  
+;       TOK_INT "int" (8.5.1) {0} int  
+;          TOK_DECLID "atoi" (8.5.5) {0} int  
+;       TOK_PARAMLIST "(" (8.5.10) {0}  
+;          TOK_STRING "string" (8.5.11) {12} string  
+;             TOK_DECLID "str" (8.5.18) {12} string  
+;       TOK_BLOCK "{" (8.5.23) {0}  
+;          TOK_BLOCK "{" (8.6.4) {12}  
+;             TOK_IF "if" (8.6.5) {13}  
+;                '!' "!" (8.6.9) {0} int vreg  
+;                   TOK_NE "!=" (8.6.15) {13} int vreg  
+;                      TOK_IDENT "str" (8.6.11) {13} string variable param lval  
+;                      TOK_NULL "null" (8.6.18) {13} null const  
+;                TOK_CALL "(" (8.6.39) {13}  
+;                   TOK_IDENT "__assert_fail" (8.6.25) {0} void function  
+;                   TOK_STRINGCON ""str != null"" (8.6.40) {13} string const  
+;                   TOK_STRINGCON ""23-atoi.oc"" (8.6.55) {13} string const  
+;                   TOK_INTCON "6" (8.6.69) {13} int const  
+;          TOK_BLOCK ";" (8.6.73) {12}  
+;          TOK_VARDECL "=" (8.7.12) {12}  
+;             TOK_INT "int" (8.7.4) {12} int  
+;                TOK_DECLID "neg" (8.7.8) {12} int variable lval  
+;             TOK_INTCON "0" (8.7.14) {12} int const  
+;          TOK_VARDECL "=" (8.8.12) {12}  
+;             TOK_INT "int" (8.8.4) {12} int  
+;                TOK_DECLID "num" (8.8.8) {12} int variable lval  
+;             TOK_INTCON "0" (8.8.14) {12} int const  
+;          TOK_VARDECL "=" (8.9.14) {12}  
+;             TOK_INT "int" (8.9.4) {12} int  
+;                TOK_DECLID "digit" (8.9.8) {12} int variable lval  
+;             TOK_INTCON "0" (8.9.16) {12} int const  
+;          TOK_IF "if" (8.10.4) {12}  
+;             TOK_NE "!=" (8.10.15) {12} int vreg  
+;                TOK_INDEX "[" (8.10.11) {0} int lval vaddr  
+;                   TOK_IDENT "str" (8.10.8) {13} string variable param lval  
+;                   TOK_INTCON "0" (8.10.12) {12} int const  
+;                TOK_CHARCON "'\0'" (8.10.18) {12} int const  
+;             TOK_BLOCK "{" (8.10.24) {12}  
+;                TOK_IF "if" (8.11.7) {15}  
+;                   TOK_EQ "==" (8.11.18) {15} int vreg  
+;                      TOK_INDEX "[" (8.11.14) {0} int lval vaddr  
+;                         TOK_IDENT "str" (8.11.11) {13} string variable param lval  
+;                         TOK_INTCON "0" (8.11.15) {15} int const  
+;                      TOK_CHARCON "'-'" (8.11.21) {15} int const  
+;                   TOK_BLOCK "{" (8.11.26) {15}  
+;                      '=' "=" (8.12.16) {16}  
+;                         TOK_IDENT "digit" (8.12.10) {12} int variable lval  
+;                         '+' "+" (8.12.24) {16} int vreg  
+;                            TOK_IDENT "digit" (8.12.18) {12} int variable lval  
+;                            TOK_INTCON "1" (8.12.26) {16} int const  
+;                      '=' "=" (8.13.14) {16}  
+;                         TOK_IDENT "neg" (8.13.10) {12} int variable lval  
+;                         TOK_INTCON "1" (8.13.16) {16} int const  
+;                TOK_VARDECL "=" (8.15.18) {15}  
+;                   TOK_INT "int" (8.15.7) {15} int  
+;                      TOK_DECLID "contin" (8.15.11) {15} int variable lval  
+;                   TOK_INTCON "1" (8.15.20) {15} int const  
+;                TOK_WHILE "while" (8.16.7) {15}  
+;                   TOK_IDENT "contin" (8.16.14) {15} int variable lval  
+;                   TOK_BLOCK "{" (8.16.22) {15}  
+;                      TOK_IFELSE "if" (8.17.10) {17}  
+;                         TOK_EQ "==" (8.17.25) {17} int vreg  
+;                            TOK_INDEX "[" (8.17.17) {0} int lval vaddr  
+;                               TOK_IDENT "str" (8.17.14) {13} string variable param lval  
+;                               TOK_IDENT "digit" (8.17.18) {12} int variable lval  
+;                            TOK_CHARCON "'\0'" (8.17.28) {17} int const  
+;                         TOK_BLOCK "{" (8.17.34) {17}  
+;                            '=' "=" (8.18.20) {18}  
+;                               TOK_IDENT "contin" (8.18.13) {15} int variable lval  
+;                               TOK_INTCON "0" (8.18.22) {18} int const  
+;                         TOK_BLOCK "{" (8.19.16) {17}  
+;                            TOK_VARDECL "=" (8.20.19) {19}  
+;                               TOK_INT "int" (8.20.13) {19} int  
+;                                  TOK_DECLID "c" (8.20.17) {19} int variable lval  
+;                               TOK_INDEX "[" (8.20.24) {0} int lval vaddr  
+;                                  TOK_IDENT "str" (8.20.21) {13} string variable param lval  
+;                                  TOK_IDENT "digit" (8.20.25) {12} int variable lval  
+;                            '=' "=" (8.21.19) {19}  
+;                               TOK_IDENT "digit" (8.21.13) {12} int variable lval  
+;                               '+' "+" (8.21.27) {19} int vreg  
+;                                  TOK_IDENT "digit" (8.21.21) {12} int variable lval  
+;                                  TOK_INTCON "1" (8.21.29) {19} int const  
+;                            TOK_IFELSE "if" (8.22.13) {19}  
+;                               TOK_LT "<" (8.22.19) {19} int vreg  
+;                                  TOK_IDENT "c" (8.22.17) {19} int variable lval  
+;                                  TOK_CHARCON "'0'" (8.22.21) {19} int const  
+;                               '=' "=" (8.22.33) {19}  
+;                                  TOK_IDENT "contin" (8.22.26) {15} int variable lval  
+;                                  TOK_INTCON "0" (8.22.35) {19} int const  
+;                               TOK_IFELSE "if" (8.23.18) {19}  
+;                                  TOK_GT ">" (8.23.24) {19} int vreg  
+;                                     TOK_IDENT "c" (8.23.22) {19} int variable lval  
+;                                     TOK_CHARCON "'9'" (8.23.26) {19} int const  
+;                                  '=' "=" (8.23.38) {19}  
+;                                     TOK_IDENT "contin" (8.23.31) {15} int variable lval  
+;                                     TOK_INTCON "0" (8.23.40) {19} int const  
+;                                  '=' "=" (8.24.22) {19}  
+;                                     TOK_IDENT "num" (8.24.18) {12} int variable lval  
+;                                     '-' "-" (8.24.37) {19} int vreg  
+;                                        '+' "+" (8.24.33) {19} int vreg  
+;                                           '*' "*" (8.24.28) {19} int vreg  
+;                                              TOK_IDENT "num" (8.24.24) {12} int variable lval  
+;                                              TOK_INTCON "10" (8.24.30) {19} int const  
+;                                           TOK_IDENT "c" (8.24.35) {19} int variable lval  
+;                                        TOK_CHARCON "'0'" (8.24.39) {19} int const  
+;                TOK_IF "if" (8.27.7) {15}  
+;                   TOK_IDENT "neg" (8.27.11) {12} int variable lval  
+;                   '=' "=" (8.27.20) {15}  
+;                      TOK_IDENT "num" (8.27.16) {12} int variable lval  
+;                      TOK_NEG "-" (8.27.22) {15} int vreg  
+;                         TOK_IDENT "num" (8.27.24) {12} int variable lval  
+;          TOK_RETURN "return" (8.29.4) {12}  
+;             TOK_IDENT "num" (8.29.11) {12} int variable lval  
+;    TOK_VARDECL "=" (8.32.10) {0}  
+;       TOK_INT "int" (8.32.1) {0} int  
+;          TOK_DECLID "argi" (8.32.5) {0} int variable lval  
+;       TOK_INTCON "1" (8.32.12) {0} int const  
+;    TOK_VARDECL "=" (8.33.15) {0}  
+;       TOK_ARRAY "[]" (8.33.7) {0} array  
+;          TOK_STRING "string" (8.33.1) {0} string  
+;          TOK_DECLID "argv" (8.33.10) {0} string array variable lval  
+;       TOK_CALL "(" (8.33.25) {0}  
+;          TOK_IDENT "getargv" (8.33.17) {0} string array function  
+;    TOK_WHILE "while" (8.34.1) {0}  
+;       TOK_NE "!=" (8.34.19) {0} int vreg  
+;          TOK_INDEX "[" (8.34.12) {0} string lval vaddr  
+;             TOK_IDENT "argv" (8.34.8) {0} string array variable lval  
+;             TOK_IDENT "argi" (8.34.13) {0} int variable lval  
+;          TOK_NULL "null" (8.34.22) {0} null const  
+;       TOK_BLOCK "{" (8.34.28) {0}  
+;          TOK_VARDECL "=" (8.35.15) {20}  
+;             TOK_STRING "string" (8.35.4) {20} string  
+;                TOK_DECLID "arg" (8.35.11) {20} string variable lval  
+;             TOK_INDEX "[" (8.35.21) {0} string lval vaddr  
+;                TOK_IDENT "argv" (8.35.17) {0} string array variable lval  
+;                TOK_IDENT "argi" (8.35.22) {0} int variable lval  
+;          TOK_CALL "(" (8.36.9) {20}  
+;             TOK_IDENT "puts" (8.36.4) {0} void function  
+;             TOK_IDENT "arg" (8.36.10) {20} string variable lval  
+;          TOK_CALL "(" (8.37.9) {20}  
+;             TOK_IDENT "puts" (8.37.4) {0} void function  
+;             TOK_STRINGCON "" = "" (8.37.10) {20} string const  
+;          TOK_CALL "(" (8.38.9) {20}  
+;             TOK_IDENT "puti" (8.38.4) {0} void function  
+;             TOK_CALL "(" (8.38.15) {20}  
+;                TOK_IDENT "atoi" (8.38.10) {0} int function  
+;                TOK_IDENT "arg" (8.38.16) {20} string variable lval  
+;          TOK_CALL "(" (8.39.9) {20}  
+;             TOK_IDENT "endl" (8.39.4) {0} void function  
+;          '=' "=" (8.40.9) {20}  
+;             TOK_IDENT "argi" (8.40.4) {0} int variable lval  
+;             '+' "+" (8.40.16) {20} int vreg  
+;                TOK_IDENT "argi" (8.40.11) {0} int variable lval  
+;                TOK_INTCON "1" (8.40.18) {20} int const  

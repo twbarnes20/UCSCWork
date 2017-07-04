@@ -1,0 +1,5 @@
+0x1a88a30->{TOK_ROOT 0.0.0 "<<ROOT>>": 0x1a8ce00
+   0x1a8ce00->{TOK_VARDECL 5.4.10 "=": 0x1a8ccf0 0x1a8cf30
+      0x1a8ccf0->{TOK_STRING 5.4.1 "string": 0x1a8cd80
+         0x1a8cd80->{TOK_DECLID 5.4.8 "t":
+      0x1a8cf30->{TOK_STRINGCON 5.4.12 ""\*/"":

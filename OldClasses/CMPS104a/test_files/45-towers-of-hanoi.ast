@@ -1,0 +1,130 @@
+; TOK_ROOT "<<ROOT>>" (0.0.0) {0}  
+;    TOK_PROTOTYPE "void" (7.28.1) {0}  
+;       TOK_VOID "void" (7.28.1) {0} void  
+;          TOK_DECLID "__assert_fail" (7.28.6) {0} void  
+;       TOK_PARAMLIST "(" (7.28.20) {0}  
+;          TOK_STRING "string" (7.28.21) {1} string  
+;             TOK_DECLID "expr" (7.28.28) {1} string  
+;          TOK_STRING "string" (7.28.34) {1} string  
+;             TOK_DECLID "file" (7.28.41) {1} string  
+;          TOK_INT "int" (7.28.47) {1} int  
+;             TOK_DECLID "line" (7.28.51) {1} int  
+;    TOK_PROTOTYPE "void" (7.29.1) {0}  
+;       TOK_VOID "void" (7.29.1) {0} void  
+;          TOK_DECLID "putb" (7.29.6) {0} void  
+;       TOK_PARAMLIST "(" (7.29.11) {0}  
+;          TOK_INT "int" (7.29.12) {2} int  
+;             TOK_DECLID "b" (7.29.16) {2} int  
+;    TOK_PROTOTYPE "void" (7.30.1) {0}  
+;       TOK_VOID "void" (7.30.1) {0} void  
+;          TOK_DECLID "putc" (7.30.6) {0} void  
+;       TOK_PARAMLIST "(" (7.30.11) {0}  
+;          TOK_INT "int" (7.30.12) {3} int  
+;             TOK_DECLID "c" (7.30.16) {3} int  
+;    TOK_PROTOTYPE "void" (7.31.1) {0}  
+;       TOK_VOID "void" (7.31.1) {0} void  
+;          TOK_DECLID "puti" (7.31.6) {0} void  
+;       TOK_PARAMLIST "(" (7.31.11) {0}  
+;          TOK_INT "int" (7.31.12) {4} int  
+;             TOK_DECLID "i" (7.31.16) {4} int  
+;    TOK_PROTOTYPE "void" (7.32.1) {0}  
+;       TOK_VOID "void" (7.32.1) {0} void  
+;          TOK_DECLID "puts" (7.32.6) {0} void  
+;       TOK_PARAMLIST "(" (7.32.11) {0}  
+;          TOK_STRING "string" (7.32.12) {5} string  
+;             TOK_DECLID "s" (7.32.19) {5} string  
+;    TOK_PROTOTYPE "void" (7.33.1) {0}  
+;       TOK_VOID "void" (7.33.1) {0} void  
+;          TOK_DECLID "endl" (7.33.6) {0} void  
+;       TOK_PARAMLIST "(" (7.33.11) {0}  
+;    TOK_PROTOTYPE "int" (7.34.1) {0}  
+;       TOK_INT "int" (7.34.1) {0} int  
+;          TOK_DECLID "getc" (7.34.5) {0} int  
+;       TOK_PARAMLIST "(" (7.34.10) {0}  
+;    TOK_PROTOTYPE "string" (7.35.1) {0}  
+;       TOK_STRING "string" (7.35.1) {0} string  
+;          TOK_DECLID "getw" (7.35.8) {0} string  
+;       TOK_PARAMLIST "(" (7.35.13) {0}  
+;    TOK_PROTOTYPE "string" (7.36.1) {0}  
+;       TOK_STRING "string" (7.36.1) {0} string  
+;          TOK_DECLID "getln" (7.36.8) {0} string  
+;       TOK_PARAMLIST "(" (7.36.14) {0}  
+;    TOK_PROTOTYPE "[]" (7.37.7) {0}  
+;       TOK_ARRAY "[]" (7.37.7) {0} array  
+;          TOK_STRING "string" (7.37.1) {0} string  
+;          TOK_DECLID "getargv" (7.37.10) {0} string array  
+;       TOK_PARAMLIST "(" (7.37.18) {0}  
+;    TOK_PROTOTYPE "void" (7.38.1) {0}  
+;       TOK_VOID "void" (7.38.1) {0} void  
+;          TOK_DECLID "exit" (7.38.6) {0} void  
+;       TOK_PARAMLIST "(" (7.38.11) {0}  
+;          TOK_INT "int" (7.38.12) {11} int  
+;             TOK_DECLID "status" (7.38.16) {11} int  
+;    TOK_FUNCTION "void" (8.5.1) {0}  
+;       TOK_VOID "void" (8.5.1) {0} void  
+;          TOK_DECLID "move" (8.5.6) {0} void  
+;       TOK_PARAMLIST "(" (8.5.11) {0}  
+;          TOK_STRING "string" (8.5.12) {12} string  
+;             TOK_DECLID "src" (8.5.19) {12} string  
+;          TOK_STRING "string" (8.5.24) {12} string  
+;             TOK_DECLID "dst" (8.5.31) {12} string  
+;       TOK_BLOCK "{" (8.5.36) {0}  
+;          TOK_CALL "(" (8.6.9) {12}  
+;             TOK_IDENT "puts" (8.6.4) {0} void function  
+;             TOK_STRINGCON ""Move a disk from "" (8.6.10) {12} string const  
+;          TOK_CALL "(" (8.7.9) {12}  
+;             TOK_IDENT "puts" (8.7.4) {0} void function  
+;             TOK_IDENT "src" (8.7.10) {13} string variable param lval  
+;          TOK_CALL "(" (8.8.9) {12}  
+;             TOK_IDENT "puts" (8.8.4) {0} void function  
+;             TOK_STRINGCON "" to "" (8.8.10) {12} string const  
+;          TOK_CALL "(" (8.9.9) {12}  
+;             TOK_IDENT "puts" (8.9.4) {0} void function  
+;             TOK_IDENT "dst" (8.9.10) {13} string variable param lval  
+;          TOK_CALL "(" (8.10.9) {12}  
+;             TOK_IDENT "puts" (8.10.4) {0} void function  
+;             TOK_STRINGCON "".\n"" (8.10.10) {12} string const  
+;    TOK_FUNCTION "void" (8.13.1) {0}  
+;       TOK_VOID "void" (8.13.1) {0} void  
+;          TOK_DECLID "towers" (8.13.6) {0} void  
+;       TOK_PARAMLIST "(" (8.13.13) {0}  
+;          TOK_INT "int" (8.13.14) {13} int  
+;             TOK_DECLID "ndisks" (8.13.18) {13} int  
+;          TOK_STRING "string" (8.13.26) {13} string  
+;             TOK_DECLID "src" (8.13.33) {13} string  
+;          TOK_STRING "string" (8.13.38) {13} string  
+;             TOK_DECLID "tmp" (8.13.45) {13} string  
+;          TOK_STRING "string" (8.13.50) {13} string  
+;             TOK_DECLID "dst" (8.13.57) {13} string  
+;       TOK_BLOCK "{" (8.13.62) {0}  
+;          TOK_IF "if" (8.14.4) {13}  
+;             TOK_LT "<" (8.14.15) {13} int vreg  
+;                TOK_IDENT "ndisks" (8.14.8) {14} int variable param lval  
+;                TOK_INTCON "1" (8.14.17) {13} int const  
+;             TOK_RETURNVOID "return" (8.14.20) {13}  
+;          TOK_CALL "(" (8.15.11) {13}  
+;             TOK_IDENT "towers" (8.15.4) {0} void function  
+;             '-' "-" (8.15.19) {13} int vreg  
+;                TOK_IDENT "ndisks" (8.15.12) {14} int variable param lval  
+;                TOK_INTCON "1" (8.15.21) {13} int const  
+;             TOK_IDENT "src" (8.15.24) {14} string variable param lval  
+;             TOK_IDENT "dst" (8.15.29) {14} string variable param lval  
+;             TOK_IDENT "tmp" (8.15.34) {14} string variable param lval  
+;          TOK_CALL "(" (8.16.9) {13}  
+;             TOK_IDENT "move" (8.16.4) {0} void function  
+;             TOK_IDENT "src" (8.16.10) {14} string variable param lval  
+;             TOK_IDENT "dst" (8.16.15) {14} string variable param lval  
+;          TOK_CALL "(" (8.17.11) {13}  
+;             TOK_IDENT "towers" (8.17.4) {0} void function  
+;             '-' "-" (8.17.19) {13} int vreg  
+;                TOK_IDENT "ndisks" (8.17.12) {14} int variable param lval  
+;                TOK_INTCON "1" (8.17.21) {13} int const  
+;             TOK_IDENT "tmp" (8.17.24) {14} string variable param lval  
+;             TOK_IDENT "src" (8.17.29) {14} string variable param lval  
+;             TOK_IDENT "dst" (8.17.34) {14} string variable param lval  
+;    TOK_CALL "(" (8.20.8) {0}  
+;       TOK_IDENT "towers" (8.20.1) {0} void function  
+;       TOK_INTCON "4" (8.20.9) {0} int const  
+;       TOK_STRINGCON ""Source"" (8.20.12) {0} string const  
+;       TOK_STRINGCON ""Temporary"" (8.20.22) {0} string const  
+;       TOK_STRINGCON ""Destination"" (8.20.35) {0} string const  

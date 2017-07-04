@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; TOK_ROOT "<<ROOT>>" (0.0.0)
+;    TOK_PROTOTYPE "anus" (5.4.1)
+;       TOK_TYPEID "anus" (5.4.1)
+;          TOK_DECLID "push" (5.4.6)
+;       TOK_PARAMLIST "(" (5.4.11)
+;          TOK_TYPEID "stack" (5.4.12)
+;             TOK_DECLID "stack" (5.4.18)
+;          TOK_STRING "string" (5.4.25)
+;             TOK_DECLID "str" (5.4.32)

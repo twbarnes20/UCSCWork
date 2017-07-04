@@ -1,0 +1,53 @@
+__assert_fail (7.28.1) {0} void function 
+   expr (7.28.21) {1} string variable param lval 
+   file (7.28.34) {1} string variable param lval 
+   line (7.28.47) {1} int variable param lval 
+
+putb (7.29.1) {0} void function 
+   b (7.29.12) {2} int variable param lval 
+
+putc (7.30.1) {0} void function 
+   c (7.30.12) {3} int variable param lval 
+
+puti (7.31.1) {0} void function 
+   i (7.31.12) {4} int variable param lval 
+
+puts (7.32.1) {0} void function 
+   s (7.32.12) {5} string variable param lval 
+
+endl (7.33.1) {0} void function 
+
+getc (7.34.1) {0} int function 
+
+getw (7.35.1) {0} string function 
+
+getln (7.36.1) {0} string function 
+
+getargv (7.37.7) {0} string array function 
+
+exit (7.38.1) {0} void function 
+   status (7.38.12) {11} int variable param lval 
+
+node (8.5.1) {0} struct "node"
+   data (8.6.4) string field {node} 
+   link (8.7.4) struct "node" field {node} 
+stack (8.10.1) {0} struct "stack"
+   top (8.11.4) struct "node" field {stack} 
+empty (8.14.1) {0} int function 
+   stack (8.14.12) {14} struct "stack" variable param lval 
+
+new_stack (8.19.1) {0} struct "new_stack" function 
+
+   stack (8.20.10) {17} struct "stack" variable lval 
+push (8.25.1) {0} void function 
+   stack (8.25.12) {18} struct "stack" variable param lval 
+   str (8.25.25) {18} string variable param lval 
+
+   tmp (8.27.9) {18} struct "node" variable lval 
+pop (8.33.1) {0} string function 
+   stack (8.33.13) {21} struct "stack" variable param lval 
+
+   tmp (8.36.11) {21} string variable lval 
+argv (8.43.10) {0} string array variable lval 
+stack (8.44.7) {0} struct "stack" variable lval 
+argi (8.45.5) {0} int variable lval 

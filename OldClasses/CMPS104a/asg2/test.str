@@ -1,0 +1,5 @@
+string_set[   4]:    2762169579135187400 0x5a1cef8->"hello"
+string_set[   6]:   14635384904416252381 0x5a1cd58->"return"
+load_factor = 0.286
+bucket_count = 7
+max_bucket_size = 1

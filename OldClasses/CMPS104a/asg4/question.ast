@@ -1,0 +1,36 @@
+; TOK_ROOT "<<ROOT>>" (0.0.0) {0}  
+;    TOK_FUNCTION "int" (5.1.1) {0}  
+;       TOK_INT "int" (5.1.1) {0} int  
+;          TOK_DECLID "collatz" (5.1.5) {0} int  
+;       TOK_PARAMLIST "(" (5.1.13) {0}  
+;          TOK_INT "int" (5.1.14) {1} int  
+;             TOK_DECLID "n" (5.1.18) {1} int  
+;       TOK_BLOCK "{" (5.1.21) {0}  
+;          TOK_VARDECL "=" (5.2.11) {1}  
+;             TOK_INT "int" (5.2.5) {1} int  
+;                TOK_DECLID "c" (5.2.9) {1} int variable lval  
+;             TOK_INTCON "0" (5.2.13) {1} int const  
+;          TOK_WHILE "while" (5.3.5) {1}  
+;             TOK_NE "!=" (5.3.14) {1} int vreg  
+;                TOK_IDENT "n" (5.3.12) {2} int variable param lval  
+;                TOK_INTCON "1" (5.3.17) {1} int const  
+;             TOK_IFELSE "if" (5.4.8) {1}  
+;                TOK_EQ "==" (5.4.18) {1} int vreg  
+;                   '%' "%" (5.4.14) {1} int vreg  
+;                      TOK_IDENT "n" (5.4.12) {2} int variable param lval  
+;                      TOK_INTCON "2" (5.4.16) {1} int const  
+;                   TOK_INTCON "1" (5.4.21) {1} int const  
+;                '=' "=" (5.5.9) {1}  
+;                   TOK_IDENT "n" (5.5.7) {2} int variable param lval  
+;                   '+' "+" (5.5.17) {1} int vreg  
+;                      '*' "*" (5.5.13) {1} int vreg  
+;                         TOK_INTCON "3" (5.5.11) {1} int const  
+;                         TOK_IDENT "n" (5.5.15) {2} int variable param lval  
+;                      TOK_INTCON "1" (5.5.19) {1} int const  
+;                '=' "=" (5.7.9) {1}  
+;                   TOK_IDENT "n" (5.7.7) {2} int variable param lval  
+;                   '/' "/" (5.7.13) {1} int vreg  
+;                      TOK_IDENT "n" (5.7.11) {2} int variable param lval  
+;                      TOK_INTCON "2" (5.7.15) {1} int const  
+;          TOK_RETURN "return" (5.8.4) {1}  
+;             TOK_IDENT "c" (5.8.11) {1} int variable lval  

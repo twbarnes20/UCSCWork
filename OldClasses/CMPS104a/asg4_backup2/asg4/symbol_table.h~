@@ -1,0 +1,74 @@
+#ifndef __SYMBOL_TABLE_H__
+#define __SYMBOL_TABLE_H__
+
+#include <stdio.h>
+#include <iostream>
+#include <unordered_map>
+#include <bitset>
+#include <string>
+#include <vector>
+
+#include "attrs.h"
+
+using namespace std;
+
+struct symbol;
+struct astree;
+
+using attr_bitset = bitset<ATTR_bitset_size>;
+
+using symbol_table = unordered_map<const string*, symbol*>;
+using symbol_entry = symbol_table::value_type;
+
+struct symbol{
+  location lloc;
+  attr_bitset attributes;
+  symbol_table* fields;
+  size_t filenr;
+  size_t linenr;
+  size_t offset;
+  size_t blocknr;
+  string* type_id;
+  int initialize;
+  vector<symbol*>* parameters;
+};
+
+//getCurrentBloc
+int current_block();
+
+//myFunctionToDoThatThing
+void delete_table_info (astree* tree);
+
+//intern_typeTable
+symbol* hold_table (astree* tree);
+
+//find_typeTable
+symbol* locate_table (const string* key);
+
+//symbolStackInit
+void symbol_create ();
+
+//symbolStackPush
+void symbol_push ();
+
+//symbolStackPop
+void symbol_pop ();
+
+//symbolStackAddVardecl
+void symbol_vardecl (astree* tree, FILE* fd_sym);
+
+//symbolStackAddPrototype
+void symbol_prototype (astree* tree, FILE* fd_sym);
+
+//symbolStackAddFunction
+int symbol_function (astree* tree, FILE* fd_sym);
+
+//getInfo
+symbol* get_info(const string* ident);
+
+//grabFunctionSymbol
+symbol* get_funcsymbol (astree* tree);
+
+//grabStructSymbol
+symbol* get_structsymbol (const string* ident);
+#endif

@@ -1,0 +1,87 @@
+; TOK_ROOT "<<ROOT>>" (0.0.0) {0}  
+;    TOK_PROTOTYPE "void" (7.28.1) {0}  
+;       TOK_VOID "void" (7.28.1) {0} void  
+;          TOK_DECLID "__assert_fail" (7.28.6) {0} void  
+;       TOK_PARAMLIST "(" (7.28.20) {0}  
+;          TOK_STRING "string" (7.28.21) {1} string  
+;             TOK_DECLID "expr" (7.28.28) {1} string  
+;          TOK_STRING "string" (7.28.34) {1} string  
+;             TOK_DECLID "file" (7.28.41) {1} string  
+;          TOK_INT "int" (7.28.47) {1} int  
+;             TOK_DECLID "line" (7.28.51) {1} int  
+;    TOK_PROTOTYPE "void" (7.29.1) {0}  
+;       TOK_VOID "void" (7.29.1) {0} void  
+;          TOK_DECLID "putb" (7.29.6) {0} void  
+;       TOK_PARAMLIST "(" (7.29.11) {0}  
+;          TOK_INT "int" (7.29.12) {2} int  
+;             TOK_DECLID "b" (7.29.16) {2} int  
+;    TOK_PROTOTYPE "void" (7.30.1) {0}  
+;       TOK_VOID "void" (7.30.1) {0} void  
+;          TOK_DECLID "putc" (7.30.6) {0} void  
+;       TOK_PARAMLIST "(" (7.30.11) {0}  
+;          TOK_INT "int" (7.30.12) {3} int  
+;             TOK_DECLID "c" (7.30.16) {3} int  
+;    TOK_PROTOTYPE "void" (7.31.1) {0}  
+;       TOK_VOID "void" (7.31.1) {0} void  
+;          TOK_DECLID "puti" (7.31.6) {0} void  
+;       TOK_PARAMLIST "(" (7.31.11) {0}  
+;          TOK_INT "int" (7.31.12) {4} int  
+;             TOK_DECLID "i" (7.31.16) {4} int  
+;    TOK_PROTOTYPE "void" (7.32.1) {0}  
+;       TOK_VOID "void" (7.32.1) {0} void  
+;          TOK_DECLID "puts" (7.32.6) {0} void  
+;       TOK_PARAMLIST "(" (7.32.11) {0}  
+;          TOK_STRING "string" (7.32.12) {5} string  
+;             TOK_DECLID "s" (7.32.19) {5} string  
+;    TOK_PROTOTYPE "void" (7.33.1) {0}  
+;       TOK_VOID "void" (7.33.1) {0} void  
+;          TOK_DECLID "endl" (7.33.6) {0} void  
+;       TOK_PARAMLIST "(" (7.33.11) {0}  
+;    TOK_PROTOTYPE "int" (7.34.1) {0}  
+;       TOK_INT "int" (7.34.1) {0} int  
+;          TOK_DECLID "getc" (7.34.5) {0} int  
+;       TOK_PARAMLIST "(" (7.34.10) {0}  
+;    TOK_PROTOTYPE "string" (7.35.1) {0}  
+;       TOK_STRING "string" (7.35.1) {0} string  
+;          TOK_DECLID "getw" (7.35.8) {0} string  
+;       TOK_PARAMLIST "(" (7.35.13) {0}  
+;    TOK_PROTOTYPE "string" (7.36.1) {0}  
+;       TOK_STRING "string" (7.36.1) {0} string  
+;          TOK_DECLID "getln" (7.36.8) {0} string  
+;       TOK_PARAMLIST "(" (7.36.14) {0}  
+;    TOK_PROTOTYPE "[]" (7.37.7) {0}  
+;       TOK_ARRAY "[]" (7.37.7) {0} array  
+;          TOK_STRING "string" (7.37.1) {0} string  
+;          TOK_DECLID "getargv" (7.37.10) {0} string array  
+;       TOK_PARAMLIST "(" (7.37.18) {0}  
+;    TOK_PROTOTYPE "void" (7.38.1) {0}  
+;       TOK_VOID "void" (7.38.1) {0} void  
+;          TOK_DECLID "exit" (7.38.6) {0} void  
+;       TOK_PARAMLIST "(" (7.38.11) {0}  
+;          TOK_INT "int" (7.38.12) {11} int  
+;             TOK_DECLID "status" (7.38.16) {11} int  
+;    TOK_VARDECL "=" (8.5.7) {0}  
+;       TOK_INT "int" (8.5.1) {0} int  
+;          TOK_DECLID "a" (8.5.5) {0} int variable lval  
+;       TOK_INTCON "3" (8.5.9) {0} int const  
+;    TOK_VARDECL "=" (8.6.7) {0}  
+;       TOK_INT "int" (8.6.1) {0} int  
+;          TOK_DECLID "b" (8.6.5) {0} int variable lval  
+;       TOK_INTCON "8" (8.6.9) {0} int const  
+;    TOK_VARDECL "=" (8.7.7) {0}  
+;       TOK_INT "int" (8.7.1) {0} int  
+;          TOK_DECLID "c" (8.7.5) {0} int variable lval  
+;       '+' "+" (8.7.11) {0} int vreg  
+;          TOK_IDENT "a" (8.7.9) {0} int variable lval  
+;          TOK_IDENT "b" (8.7.13) {0} int variable lval  
+;    '=' "=" (8.8.3) {0}  
+;       TOK_IDENT "a" (8.8.1) {0} int variable lval  
+;       '+' "+" (8.8.7) {0} int vreg  
+;          TOK_IDENT "b" (8.8.5) {0} int variable lval  
+;          TOK_IDENT "c" (8.8.9) {0} int variable lval  
+;    TOK_CALL "(" (8.9.6) {0}  
+;       TOK_IDENT "puti" (8.9.1) {0} void function  
+;       TOK_IDENT "a" (8.9.7) {0} int variable lval  
+;    TOK_CALL "(" (8.10.6) {0}  
+;       TOK_IDENT "putc" (8.10.1) {0} void function  
+;       TOK_CHARCON "'\n'" (8.10.7) {0} int const  

@@ -1,0 +1,26 @@
+; TOK_ROOT "<<ROOT>>" (0.0.0) {0}  
+;    TOK_FUNCTION "stack" (5.12.1) {0}  
+;       TOK_TYPEID "stack" (5.12.1) {0} struct "stack"  
+;          TOK_DECLID "new_stack" (5.12.7) {0} struct "stack"  
+;       TOK_PARAMLIST "(" (5.12.17) {0}  
+;          TOK_INT "int" (5.12.18) {1} int  
+;             TOK_DECLID "size" (5.12.22) {1} int  
+;       TOK_BLOCK "{" (5.12.28) {0}  
+;          TOK_VARDECL "=" (5.13.16) {1}  
+;             TOK_TYPEID "stack" (5.13.4) {1} struct "stack"  
+;                TOK_DECLID "stack" (5.13.10) {1} struct "stack" variable lval  
+;             TOK_NEW "new" (5.13.18) {0}  
+;                TOK_TYPEID "stack" (5.13.22) {0}  
+;          '=' "=" (5.15.15) {1}  
+;             '.' "." (5.15.9) {0}  
+;                TOK_IDENT "stack" (5.15.4) {1} struct "stack" variable lval  
+;                TOK_FIELD "size" (5.15.10) {0}  
+;             TOK_IDENT "size" (5.15.17) {2} int variable param lval  
+;          '=' "=" (5.16.14) {1}  
+;             '.' "." (5.16.9) {0}  
+;                TOK_IDENT "stack" (5.16.4) {1} struct "stack" variable lval  
+;                TOK_FIELD "top" (5.16.10) {0}  
+;             TOK_NEG "-" (5.16.17) {1} int vreg  
+;                TOK_INTCON "1" (5.16.18) {1} int const  
+;          TOK_RETURN "return" (5.17.4) {1}  
+;             TOK_IDENT "stack" (5.17.11) {1} struct "stack" variable lval  

@@ -1,0 +1,4 @@
+collatz (5.1.1) {0} int function 
+   n (5.1.14) {1} int variable param lval 
+
+   c (5.2.9) {1} int variable lval 

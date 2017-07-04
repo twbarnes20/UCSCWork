@@ -1,0 +1,123 @@
+0x1ebda20->{TOK_ROOT 0.0.0 "<<ROOT>>": 0x1ec1f00 0x1ec2260 0x1ec2910 0x1ec2b80 0x1ec3420 0x1ec3560 0x1ec3830 0x1ec3990 0x1ec3ad0 0x1ec3d40 0x1ec40a0 0x1ec4420 0x1ec4a50 0x1ec4c10 0x1ec3100 0x1ec5630 0x1ec56d0 0x1ec5870 0x1ec5a20 0x1ec6170
+   0x1ec1f00->{TOK_VARDECL 5.7.9 "=": 0x1ec1c70 0x1ec1fa0
+      0x1ec1c70->{TOK_INT 5.7.1 "int": 0x1ec1d30
+         0x1ec1d30->{TOK_DECLID 5.7.4 "[]":
+      0x1ec1fa0->{TOK_NULL 5.7.11 "null":
+   0x1ec2260->{TOK_VARDECL 5.8.15 "=": 0x1ec2040 0x1ec22b0
+      0x1ec2040->{TOK_TYPEID 5.8.1 "reference": 0x1ec2170
+         0x1ec2170->{TOK_DECLID 5.8.10 "[]":
+      0x1ec22b0->{TOK_NEWARRAY 5.8.17 "new": 0x1ec2510
+         0x1ec2510->{TOK_INTCON 5.8.28 "10":
+   0x1ec2910->{TOK_PROTOTYPE 5.9.1 "void": 0x1ec25b0 0x1ec2750
+      0x1ec25b0->{TOK_VOID 5.9.1 "void": 0x1ec2470
+         0x1ec2470->{TOK_DECLID 5.9.6 "foo":
+      0x1ec2750->{TOK_PARAMLIST 5.9.10 "(":
+   0x1ec2b80->{TOK_PROTOTYPE 5.10.1 "void": 0x1ec2890 0x1ec29d0
+      0x1ec2890->{TOK_VOID 5.10.1 "void": 0x1ec27f0
+         0x1ec27f0->{TOK_DECLID 5.10.6 "foo":
+      0x1ec29d0->{TOK_PARAMLIST 5.10.10 "(": 0x1ec2a20
+         0x1ec2a20->{TOK_INT 5.10.11 "int": 0x1ec2a70
+            0x1ec2a70->{TOK_DECLID 5.10.15 "a":
+   0x1ec3420->{TOK_FUNCTION 5.11.1 "void": 0x1ec2b30 0x1ec2c10 0x1ec2390
+      0x1ec2b30->{TOK_VOID 5.11.1 "void": 0x1ec2ae0
+         0x1ec2ae0->{TOK_DECLID 5.11.6 "foo":
+      0x1ec2c10->{TOK_PARAMLIST 5.11.10 "(": 0x1ec2c60 0x1ec2e00
+         0x1ec2c60->{TOK_INT 5.11.11 "int": 0x1ec2cb0
+            0x1ec2cb0->{TOK_DECLID 5.11.14 "[]":
+         0x1ec2e00->{TOK_INT 5.11.20 "int": 0x1ec2e80
+            0x1ec2e80->{TOK_DECLID 5.11.23 "[]":
+      0x1ec2390->{TOK_BLOCK 5.11.29 "{": 0x1ec3260
+         0x1ec3260->{TOK_VARDECL 5.11.36 "=": 0x1ec23e0 0x1ec3330
+            0x1ec23e0->{TOK_INT 5.11.30 "int": 0x1ec31f0
+               0x1ec31f0->{TOK_DECLID 5.11.34 "x":
+            0x1ec3330->{'+' 5.11.40 "+": 0x1ec32e0 0x1ec33a0
+               0x1ec32e0->{TOK_IDENT 5.11.38 "a":
+               0x1ec33a0->{TOK_IDENT 5.11.42 "b":
+   0x1ec3560->{TOK_STRUCT 5.12.1 "struct": 0x1ec35b0 0x1ec3680 0x1ec3720
+      0x1ec35b0->{TOK_TYPEID 5.12.8 "foo":
+      0x1ec3680->{TOK_FIELD 5.12.14 "int": 0x1ec36d0
+         0x1ec36d0->{TOK_IDENT 5.12.18 "a":
+      0x1ec3720->{TOK_FIELD 5.12.21 "int": 0x1ec3630
+         0x1ec3630->{TOK_IDENT 5.12.25 "b":
+   0x1ec3830->{'+' 5.14.3 "+": 0x1ec37b0 0x1ec3880
+      0x1ec37b0->{TOK_IDENT 5.14.1 "a":
+      0x1ec3880->{TOK_IDENT 5.14.5 "b":
+   0x1ec3990->{TOK_CALL 5.15.3 "(": 0x1ec3940
+      0x1ec3940->{TOK_IDENT 5.15.1 "f":
+   0x1ec3ad0->{TOK_CALL 5.16.3 "(": 0x1ec3b20 0x1ec3c50 0x1ec3b70 0x1ec3a80
+      0x1ec3b20->{TOK_IDENT 5.16.4 "x":
+      0x1ec3c50->{'+' 5.16.8 "+": 0x1ec3be0 0x1ec3cd0
+         0x1ec3be0->{TOK_IDENT 5.16.7 "y":
+         0x1ec3cd0->{TOK_INTCON 5.16.9 "3":
+      0x1ec3b70->{TOK_IDENT 5.16.12 "z":
+      0x1ec3a80->{TOK_IDENT 5.16.1 "f":
+   0x1ec3d40->{'+' 5.17.5 "+": 0x1ec2d90 0x1ec3f40
+      0x1ec2d90->{TOK_IDENT 5.17.1 "foo":
+      0x1ec3f40->{TOK_IDENT 5.17.7 "bar":
+   0x1ec40a0->{'=' 5.18.3 "=": 0x1ec4050 0x1ec4140
+      0x1ec4050->{TOK_IDENT 5.18.1 "a":
+      0x1ec4140->{'=' 5.18.7 "=": 0x1ec40f0 0x1ec41e0
+         0x1ec40f0->{TOK_IDENT 5.18.5 "b":
+         0x1ec41e0->{'=' 5.18.11 "=": 0x1ec4190 0x1ec4260
+            0x1ec4190->{TOK_IDENT 5.18.9 "c":
+            0x1ec4260->{TOK_IDENT 5.18.13 "d":
+   0x1ec4420->{'=' 5.19.6 "=": 0x1ec43d0 0x1ec4600
+      0x1ec43d0->{TOK_IDENT 5.19.1 "test":
+      0x1ec4600->{'+' 5.19.18 "+": 0x1ec4510 0x1ec46c0
+         0x1ec4510->{'+' 5.19.12 "+": 0x1ec44a0 0x1ec4590
+            0x1ec44a0->{TOK_IDENT 5.19.8 "abc":
+            0x1ec4590->{TOK_IDENT 5.19.14 "def":
+         0x1ec46c0->{TOK_IDENT 5.19.20 "ghi":
+   0x1ec4a50->{'+' 5.20.15 "+": 0x1ec4840 0x1ec4b00
+      0x1ec4840->{'+' 5.20.6 "+": 0x1ec47f0 0x1ec4930
+         0x1ec47f0->{TOK_IDENT 5.20.1 "this":
+         0x1ec4930->{'*' 5.20.11 "*": 0x1ec48c0 0x1ec49d0
+            0x1ec48c0->{TOK_INTCON 5.20.8 "23":
+            0x1ec49d0->{TOK_IDENT 5.20.13 "a":
+      0x1ec4b00->{TOK_STRINGCON 5.20.17 ""hello"":
+   0x1ec4c10->{TOK_WHILE 5.21.1 "while": 0x1ec3010 0x1ec51f0
+      0x1ec3010->{TOK_LT 5.21.10 "<": 0x1ec2fc0 0x1ec3080
+         0x1ec2fc0->{TOK_IDENT 5.21.8 "a":
+         0x1ec3080->{TOK_IDENT 5.21.12 "b":
+      0x1ec51f0->{'=' 5.21.17 "=": 0x1ec51a0 0x1ec5290
+         0x1ec51a0->{TOK_IDENT 5.21.15 "f":
+         0x1ec5290->{'+' 5.21.21 "+": 0x1ec5240 0x1ec52e0
+            0x1ec5240->{TOK_IDENT 5.21.19 "f":
+            0x1ec52e0->{TOK_INTCON 5.21.23 "1":
+   0x1ec3100->{TOK_RETURN 5.22.1 "return": 0x1ec53f0
+      0x1ec53f0->{'+' 5.22.10 "+": 0x1ec2f40 0x1ec5440
+         0x1ec2f40->{TOK_INTCON 5.22.8 "3":
+         0x1ec5440->{TOK_INTCON 5.22.12 "4":
+   0x1ec5630->{'=' 5.23.6 "=": 0x1ec54b0 0x1ec5570
+      0x1ec54b0->{TOK_IDENT 5.23.1 "a": 0x1ec55c0
+         0x1ec55c0->{TOK_IDENT 5.23.3 "i":
+      0x1ec5570->{TOK_IDENT 5.23.8 "b": 0x1ec5720
+         0x1ec5720->{TOK_IDENT 5.23.10 "j":
+   0x1ec56d0->{TOK_RETURNVOID 5.24.1 "return":
+   0x1ec5870->{TOK_WHILE 5.25.1 "while": 0x1ec59d0 0x1ec5a70
+      0x1ec59d0->{TOK_IDENT 5.25.8 "true":
+      0x1ec5a70->{TOK_BLOCK 5.25.14 "{": 0x1ec5b40 0x1ec5cc0
+         0x1ec5b40->{'=' 5.25.17 "=": 0x1ec5af0 0x1ec5b90
+            0x1ec5af0->{TOK_IDENT 5.25.15 "a":
+            0x1ec5b90->{TOK_INTCON 5.25.19 "3":
+         0x1ec5cc0->{'=' 5.25.24 "=": 0x1ec5c70 0x1ec5d10
+            0x1ec5c70->{TOK_IDENT 5.25.22 "b":
+            0x1ec5d10->{TOK_INTCON 5.25.26 "4":
+   0x1ec5a20->{TOK_IF 5.26.1 "if": 0x1ec5e90 0x1ec6060
+      0x1ec5e90->{TOK_EQ 5.26.7 "==": 0x1ec5df0 0x1ec5f00
+         0x1ec5df0->{TOK_IDENT 5.26.5 "a":
+         0x1ec5f00->{TOK_IDENT 5.26.10 "b":
+      0x1ec6060->{TOK_CALL 5.26.15 "(": 0x1ec60b0 0x1ec6010
+         0x1ec60b0->{TOK_IDENT 5.26.16 "x":
+         0x1ec6010->{TOK_IDENT 5.26.13 "f":
+   0x1ec6170->{TOK_IFELSE 5.27.1 "if": 0x1ec61e0 0x1ec6390 0x1ec6570
+      0x1ec61e0->{TOK_NE 5.27.7 "!=": 0x1ec3eb0 0x1ec6230
+         0x1ec3eb0->{TOK_IDENT 5.27.5 "a":
+         0x1ec6230->{TOK_IDENT 5.27.10 "b":
+      0x1ec6390->{'=' 5.27.15 "=": 0x1ec6340 0x1ec63e0
+         0x1ec6340->{TOK_IDENT 5.27.13 "y":
+         0x1ec63e0->{TOK_INTCON 5.27.17 "3":
+      0x1ec6570->{TOK_CALL 5.27.27 "(": 0x1ec65c0 0x1ec6680 0x1ec64f0
+         0x1ec65c0->{TOK_IDENT 5.27.28 "y":
+         0x1ec6680->{TOK_IDENT 5.27.31 "z":
+         0x1ec64f0->{TOK_IDENT 5.27.25 "f":

@@ -1,0 +1,12 @@
+string_set[   3]:   10159970873491820195 0x1d972f8->"1"
+string_set[  11]:   16215888864653804456 0x1d97568->"4"
+string_set[  15]:    1661080222707906657 0x1d972a8->""03-test3.oc""
+string_set[  20]:    8992511613177483825 0x1d973b8->""<built-in>""
+string_set[  26]:    4038071199236763861 0x1d97288->"#"
+string_set[  28]:    8248777770799913213 0x1d97518->"3"
+string_set[  30]:   13985887974751908322 0x1d97498->""<command-line>""
+string_set[  31]:    9670513292228268826 0x1d974f8->""/usr/include/stdc-predef.h""
+string_set[  32]:    4551451650890805270 0x1d975f8->"2"
+load_factor = 0.243
+bucket_count = 37
+max_bucket_size = 1

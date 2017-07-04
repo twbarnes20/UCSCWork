@@ -1,0 +1,59 @@
+GNU Prolog 1.4.4 (64 bits)
+Compiled Nov  6 2014, 18:04:28 with gcc
+By Daniel Diaz
+Copyright (C) 1999-2013 Daniel Diaz
+| ?- $Id: group2.tests,v 1.2 2016-11-21 14:06:16-08 - - $
+
+yes
+| ?- compiling /afs/cats.ucsc.edu/users/y/trwbarne/CMPS112/asg4/database.pl for byte code...
+/afs/cats.ucsc.edu/users/y/trwbarne/CMPS112/asg4/database.pl compiled, 75 lines read - 11169 bytes written, 8 ms
+
+(2 ms) yes
+| ?- compiling /afs/cats.ucsc.edu/users/y/trwbarne/CMPS112/asg4/functions.pl for byte code...
+/afs/cats.ucsc.edu/users/y/trwbarne/CMPS112/asg4/functions.pl compiled, 157 lines read - 14993 bytes written, 9 ms
+
+(2 ms) yes
+| ?- Error: We could not find you a flight. Try a bus?
+
+(1 ms) no
+| ?- 
+   Depart from:  sfo   San Francisco   09:00
+   Arrive at:    lax   Los Angeles     09:40
+   Depart from:  lax   Los Angeles     12:00
+   Arrive at:    sjc   San Jose        12:37
+
+yes
+| ?- 
+   Depart from:  sjc   San Jose        11:15
+   Arrive at:    lax   Los Angeles     11:52
+
+yes
+| ?- 
+   Depart from:  sfo   San Francisco   09:00
+   Arrive at:    lax   Los Angeles     09:40
+   Depart from:  lax   Los Angeles     13:30
+   Arrive at:    sea   Seattle-Tacoma  15:24
+
+yes
+| ?- 
+   Depart from:  mia   Miami           09:00
+   Arrive at:    atl   Atlanta         10:11
+   Depart from:  atl   Atlanta         11:30
+   Arrive at:    lax   Los Angeles     15:23
+
+yes
+| ?- 
+   Depart from:  mia   Miami           09:00
+   Arrive at:    atl   Atlanta         10:11
+   Depart from:  atl   Atlanta         11:30
+   Arrive at:    lax   Los Angeles     15:23
+   Depart from:  lax   Los Angeles     19:30
+   Arrive at:    sjc   San Jose        20:07
+
+yes
+| ?- 
+   Depart from:  lax   Los Angeles     14:00
+   Arrive at:    nyc   New York City   18:55
+
+yes
+| ?- 

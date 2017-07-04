@@ -1,0 +1,37 @@
+0xf52a20->{TOK_ROOT 0.0.0 "<<ROOT>>": 0xf56f00 0xf57230 0xf56e70 0xf57a10 0xf578d0 0xf57c40 0xf57400 0xf58260
+   0xf56f00->{TOK_VARDECL 5.4.9 "=": 0xf56c70 0xf56fa0
+      0xf56c70->{TOK_INT 5.4.1 "int": 0xf56d30
+         0xf56d30->{TOK_DECLID 5.4.4 "[]":
+      0xf56fa0->{TOK_NULL 5.4.11 "null":
+   0xf57230->{TOK_VARDECL 5.5.9 "=": 0xf57040 0xf572b0
+      0xf57040->{TOK_INT 5.5.1 "int": 0xf57150
+         0xf57150->{TOK_DECLID 5.5.4 "[]":
+      0xf572b0->{TOK_NULL 5.5.11 "null":
+   0xf56e70->{TOK_VARDECL 5.6.7 "=": 0xf57300 0xf57590
+      0xf57300->{TOK_INT 5.6.1 "int": 0xf57390
+         0xf57390->{TOK_DECLID 5.6.5 "c":
+      0xf57590->{'+' 5.6.11 "+": 0xf57540 0xf575e0
+         0xf57540->{TOK_IDENT 5.6.9 "a":
+         0xf575e0->{TOK_IDENT 5.6.13 "b":
+   0xf57a10->{TOK_FUNCTION 5.7.1 "void": 0xf57660 0xf57830 0xf57970
+      0xf57660->{TOK_VOID 5.7.1 "void": 0xf57740
+         0xf57740->{TOK_DECLID 5.7.5 "[]":
+      0xf57830->{TOK_PARAMLIST 5.7.9 "(":
+      0xf57970->{TOK_BLOCK 5.7.12 "{":
+   0xf578d0->{TOK_BLOCK 5.7.14 ";":
+   0xf57c40->{TOK_VARDECL 5.8.8 "=": 0xf57ba0 0xf57c90
+      0xf57ba0->{TOK_VOID 5.8.1 "void": 0xf57bf0
+         0xf57bf0->{TOK_DECLID 5.8.6 "n":
+      0xf57c90->{TOK_NULL 5.8.10 "null":
+   0xf57400->{TOK_VARDECL 5.9.8 "=": 0xf57ce0 0xf58090
+      0xf57ce0->{TOK_TYPEID 5.9.1 "bool": 0xf57d70
+         0xf57d70->{TOK_DECLID 5.9.6 "x":
+      0xf58090->{TOK_LT 5.9.12 "<": 0xf57480 0xf580e0
+         0xf57480->{TOK_IDENT 5.9.10 "a":
+         0xf580e0->{TOK_IDENT 5.9.14 "b":
+   0xf58260->{TOK_VARDECL 5.10.8 "=": 0xf58160 0xf58330
+      0xf58160->{TOK_TYPEID 5.10.1 "bool": 0xf581f0
+         0xf581f0->{TOK_DECLID 5.10.6 "y":
+      0xf58330->{TOK_EQ 5.10.11 "==": 0xf582e0 0xf583a0
+         0xf582e0->{TOK_IDENT 5.10.10 "a":
+         0xf583a0->{TOK_IDENT 5.10.13 "b":

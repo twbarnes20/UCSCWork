@@ -1,0 +1,4 @@
+new_stack (5.12.1) {0} struct "new_stack" function 
+   size (5.12.18) {1} int variable param lval 
+
+   stack (5.13.10) {1} struct "stack" variable lval 

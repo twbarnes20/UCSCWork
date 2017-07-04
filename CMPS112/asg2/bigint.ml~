@@ -1,0 +1,211 @@
+(*
+Trevor Barnes trwbarnes@ucsc.edu
+Kevin Cai     kcai2@ucsc.edu
+*)
+
+open Printf
+
+module Bigint = struct
+
+  type relation = Greater | Equal | Less
+  type sign     = Pos | Neg
+  type bigint   = Bigint of sign * int list
+  let  radix    = 10
+  let  radixlen =  1
+
+  let car       = List.hd
+  let cdr       = List.tl
+  let map       = List.map
+  let reverse   = List.rev
+  let length    = List.length
+  let strcat    = String.concat
+  let strlen    = String.length
+  let strsub    = String.sub
+  let zero      = Bigint (Pos, [])
+
+  let remove_zero list =
+    let rec remove_zero' list' = match list' with
+      | 0::cdr -> remove_zero' cdr
+      | remove_zeromed -> reverse remove_zeromed
+    in remove_zero' (reverse list)
+
+  let rec cmp list1 list2 = match (list1, list2) with
+    | list1, []                 -> 1
+    | [], list2                 -> 0
+    | car1::cdr1, car2::cdr2    ->
+      if car1 > car2
+        then 1
+      else if car2 > car1
+        then 0
+      else cmp cdr1 cdr2
+
+  let num_comp val1 val2 =
+    let len = length val1 and len2 = length val2
+    in if len < len2 then Less
+      else if len > len2 then Greater
+      else   
+        let rec comp lst1 lst2 =
+          if lst1 = [] then Equal
+          else if car lst1 < car lst2 then Less
+          else if car lst1 > car lst2 then Greater
+          else comp (cdr lst1) (cdr lst2)
+        in comp (reverse val1) (reverse val2)
+
+  let charlist_of_string str = 
+    let last = strlen str - 1
+    in  let rec charlist pos result =
+          if pos < 0
+          then result
+          else charlist (pos - 1) (str.[pos] :: result)
+        in  charlist last []
+
+  let bigint_of_string str =
+    let len = strlen str
+    in let to_intlist first =
+         let substr = strsub str first (len - first) in
+         let digit char = int_of_char char - int_of_char '0' in
+         map digit (reverse (charlist_of_string substr))
+       in  if   len = 0
+         then zero
+         else if   str.[0] = '_'
+         then Bigint (Neg, (remove_zero (to_intlist 1)))
+         else Bigint (Pos, (remove_zero (to_intlist 0)))
+
+  let string_of_bigint (Bigint (sign, value)) =
+    match value with
+    | []    -> "0"
+    | value -> let reversed = reverse value
+               in  strcat ""
+               ((if sign = Pos then "" else "-") ::
+                   (map string_of_int reversed))
+  
+  let rec add' list1 list2 carry = match (list1, list2, carry) with
+    | list1, [], 0       -> list1
+    | [], list2, 0       -> list2
+    | list1, [], carry   -> add' list1 [carry] 0
+    | [], list2, carry   -> add' [carry] list2 0
+    | car1::cdr1, car2::cdr2, carry ->
+       let sum = car1 + car2 + carry
+       in sum mod radix :: add' cdr1 cdr2 (sum / radix)
+
+
+  let rec sub' list1 list2 carry = match (list1, list2, carry) with
+    | list1, [], 0     -> list1
+    | [], list2, 0     -> list2
+    | list1, [], carry -> sub' list1 [carry] 0
+    | [], list2, carry -> sub' [carry] list2 0
+    | car1::cdr1, car2::cdr2, carry ->
+       let difference = car1 - car2 - carry
+       in if difference < 0
+         then (difference + radix) :: sub' cdr1 cdr2 1
+         else difference  :: sub' cdr1 cdr2 0
+
+  let sub (Bigint (sig1, val1))  (Bigint (sig2, val2)) =
+    let relate = num_comp val1 val2
+    in match (sig1, sig2) with
+    | Neg, Neg -> if relate = Less then
+        Bigint (Pos, (remove_zero (sub' val2 val1 0)))
+      else if relate = Greater then 
+        Bigint (Neg, (remove_zero (sub' val1 val2 0)))
+      else zero
+    | Pos, Pos -> if relate = Less then 
+        Bigint (Neg, (remove_zero (sub' val2 val1 0)))
+      else if relate = Greater then 
+        Bigint (Pos, (remove_zero (sub' val1 val2 0)))
+      else zero
+    | _, _     -> Bigint (sig1, (remove_zero (add' val1 val2 0)))
+
+  let add (Bigint (sig1, val1)) (Bigint (sig2, val2)) =
+    let relate = num_comp val1 val2
+    in match (sig1, sig2) with
+    | Pos, Neg -> if relate = Less then
+        Bigint (Neg, (remove_zero (sub' val2 val1 0)))
+      else if relate = Greater then 
+        Bigint (Pos, (remove_zero (sub' val1 val2 0)))
+      else zero
+    | Neg, Pos -> if relate = Less then 
+        Bigint (Pos, (remove_zero (sub' val2 val1 0)))
+      else if relate = Greater then 
+        Bigint (Neg, (remove_zero (sub' val1 val2 0)))
+      else zero
+    | _, _     -> Bigint (sig1, (remove_zero (add' val1 val2 0)))
+
+  (*Give int list names first int list:remainder second int list:sum*)  
+  type egyptian =
+    {remainder:int list ; sum:int list}
+
+  let mul' list1 list2 =
+    let rec mul'' max list1' list2' =  
+      let relate = num_comp max list1' 
+        in if relate = Less then 
+          {remainder = max ; sum = []}
+        else
+          let result = mul'' max (remove_zero(add' list1' list1' 0)) (remove_zero(add' list2' list2' 0))
+          in let relate2 = num_comp result.remainder list1'
+          in if relate2 <> Less then
+            {remainder = remove_zero (sub' result.remainder list1' 0) ; sum = remove_zero (add' result.sum list2' 0) }
+          else
+            result 
+    in let ret_val = mul'' list1 [1] list2  
+    in ret_val.sum
+
+  (* multiplication function *)
+  let mul (Bigint(neg1, value1)) (Bigint(neg2, value2)) =
+    if (value1 = [] || value2 = []) 
+      then zero
+    else if (neg1 = neg2)
+      then Bigint(Pos, mul' value1 value2)
+    else Bigint(Neg, mul' value1 value2)
+
+  let div' list1 list2  = 
+    let rec div'' max list1' list2' = 
+      let relate = num_comp max list2'
+        in if relate = Less then
+          {remainder = max ; sum = []}
+        else
+          let result = div'' max (remove_zero(add' list1' list1' 0)) (remove_zero(add' list2' list2' 0))
+          in let relate2 = num_comp result.remainder list2'
+          in if relate2 <> Less then
+            {remainder = remove_zero (sub' result.remainder list2' 0) ; sum = remove_zero (add' result.sum list1' 0) }
+          else
+            result
+    in let ret_val = div'' list1 [1] list2  
+    in (ret_val.sum, ret_val.remainder)
+           
+  (* division function *)  
+  let div (Bigint (sig1, val1)) (Bigint (sig2, val2)) =
+    if (val1 = [])
+      then zero 
+    else if (sig1 = sig2)
+      then Bigint (Pos, remove_zero (fst (div' val1 val2)))
+    else Bigint (Neg, remove_zero (fst (div' val1 val2)))
+
+  let rem (Bigint (sig1, val1)) (Bigint (sig2, val2)) =
+    if (val1 = [])
+      then zero
+    else Bigint (sig1, remove_zero (snd (div' val1 val2)))
+
+  let pow' x n =
+    let rec pow'' y x n =
+      if n = []
+        then y
+      else if n = [1]
+        then mul' x y
+      else if (car n) mod 2 = 0
+        then pow'' y (mul' x x) (fst (div' n [2]))
+      else 
+        pow'' (mul' x y) (mul' x x) (fst(div' (remove_zero (sub' n [1] 0)) [2]))   
+    in pow'' [1] x n 
+
+  let pow (Bigint (neg1, value1)) (Bigint (neg2, value2)) =
+    if (value2 = [])
+      then Bigint (Pos, [1])
+    else if neg2 = Neg
+      then zero
+    else if neg1 = Pos
+      then (Bigint (neg1, pow' value1 value2))
+    else if rem (Bigint (Pos, value2)) (Bigint(Pos, [2])) = (Bigint (Pos, [1]))
+      then (Bigint (Neg, pow' value1 value2))
+    else (Bigint (Pos, pow' value1 value2))
+ 
+end

@@ -1,0 +1,12 @@
+string_set[   3]:   10159970873491820195 0x16c52f8->"1"
+string_set[  11]:   16215888864653804456 0x16c5568->"4"
+string_set[  17]:   15495013418351882729 0x16c52a8->""00-trivial.oc""
+string_set[  20]:    8992511613177483825 0x16c53b8->""<built-in>""
+string_set[  26]:    4038071199236763861 0x16c5288->"#"
+string_set[  28]:    8248777770799913213 0x16c5518->"3"
+string_set[  30]:   13985887974751908322 0x16c5498->""<command-line>""
+string_set[  31]:    9670513292228268826 0x16c54f8->""/usr/include/stdc-predef.h""
+string_set[  32]:    4551451650890805270 0x16c55f8->"2"
+load_factor = 0.243
+bucket_count = 37
+max_bucket_size = 1

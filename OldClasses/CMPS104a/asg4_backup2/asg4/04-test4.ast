@@ -1,0 +1,103 @@
+; TOK_ROOT "<<ROOT>>" (0.0.0) {0}  
+;    TOK_PROTOTYPE "void" (7.27.1) {0}  
+;       TOK_VOID "void" (7.27.1) {0} void  
+;          TOK_DECLID "__assert_fail" (7.27.6) {0} void  
+;       TOK_PARAMLIST "(" (7.27.20) {0}  
+;          TOK_STRING "string" (7.27.21) {1} string  
+;             TOK_DECLID "expr" (7.27.28) {1} string  
+;          TOK_STRING "string" (7.27.34) {1} string  
+;             TOK_DECLID "file" (7.27.41) {1} string  
+;          TOK_INT "int" (7.27.47) {1} int  
+;             TOK_DECLID "line" (7.27.51) {1} int  
+;    TOK_PROTOTYPE "void" (7.28.1) {0}  
+;       TOK_VOID "void" (7.28.1) {0} void  
+;          TOK_DECLID "putb" (7.28.6) {0} void  
+;       TOK_PARAMLIST "(" (7.28.11) {0}  
+;          TOK_INT "int" (7.28.12) {2} int  
+;             TOK_DECLID "b" (7.28.16) {2} int  
+;    TOK_PROTOTYPE "void" (7.29.1) {0}  
+;       TOK_VOID "void" (7.29.1) {0} void  
+;          TOK_DECLID "putc" (7.29.6) {0} void  
+;       TOK_PARAMLIST "(" (7.29.11) {0}  
+;          TOK_INT "int" (7.29.12) {3} int  
+;             TOK_DECLID "c" (7.29.16) {3} int  
+;    TOK_PROTOTYPE "void" (7.30.1) {0}  
+;       TOK_VOID "void" (7.30.1) {0} void  
+;          TOK_DECLID "puti" (7.30.6) {0} void  
+;       TOK_PARAMLIST "(" (7.30.11) {0}  
+;          TOK_INT "int" (7.30.12) {4} int  
+;             TOK_DECLID "i" (7.30.16) {4} int  
+;    TOK_PROTOTYPE "void" (7.31.1) {0}  
+;       TOK_VOID "void" (7.31.1) {0} void  
+;          TOK_DECLID "puts" (7.31.6) {0} void  
+;       TOK_PARAMLIST "(" (7.31.11) {0}  
+;          TOK_STRING "string" (7.31.12) {5} string  
+;             TOK_DECLID "s" (7.31.19) {5} string  
+;    TOK_PROTOTYPE "void" (7.32.1) {0}  
+;       TOK_VOID "void" (7.32.1) {0} void  
+;          TOK_DECLID "endl" (7.32.6) {0} void  
+;       TOK_PARAMLIST "(" (7.32.11) {0}  
+;    TOK_PROTOTYPE "int" (7.33.1) {0}  
+;       TOK_INT "int" (7.33.1) {0} int  
+;          TOK_DECLID "getc" (7.33.5) {0} int  
+;       TOK_PARAMLIST "(" (7.33.10) {0}  
+;    TOK_PROTOTYPE "string" (7.34.1) {0}  
+;       TOK_STRING "string" (7.34.1) {0} string  
+;          TOK_DECLID "getw" (7.34.8) {0} string  
+;       TOK_PARAMLIST "(" (7.34.13) {0}  
+;    TOK_PROTOTYPE "string" (7.35.1) {0}  
+;       TOK_STRING "string" (7.35.1) {0} string  
+;          TOK_DECLID "getln" (7.35.8) {0} string  
+;       TOK_PARAMLIST "(" (7.35.14) {0}  
+;    TOK_PROTOTYPE "[]" (7.36.7) {0}  
+;       TOK_ARRAY "[]" (7.36.7) {0} array  
+;          TOK_STRING "string" (7.36.1) {0} string  
+;          TOK_DECLID "getargv" (7.36.10) {0} string array  
+;       TOK_PARAMLIST "(" (7.36.18) {0}  
+;    TOK_PROTOTYPE "void" (7.37.1) {0}  
+;       TOK_VOID "void" (7.37.1) {0} void  
+;          TOK_DECLID "exit" (7.37.6) {0} void  
+;       TOK_PARAMLIST "(" (7.37.11) {0}  
+;          TOK_INT "int" (7.37.12) {11} int  
+;             TOK_DECLID "status" (7.37.16) {11} int  
+;    TOK_STRUCT "struct" (8.5.1) {0} struct  
+;       TOK_TYPEID "foo" (8.5.8) {0} struct  
+;       TOK_INT "int" (8.6.4) {12} int  
+;          TOK_FIELD "a" (8.6.8) {12} int field  
+;    TOK_VARDECL "=" (8.9.7) {0}  
+;       TOK_INT "int" (8.9.1) {0} int  
+;          TOK_DECLID "a" (8.9.5) {0} int variable lval  
+;       TOK_INTCON "6" (8.9.9) {0}  
+;    TOK_VARDECL "=" (8.10.7) {0}  
+;       TOK_TYPEID "foo" (8.10.1) {0} struct "foo"  
+;          TOK_DECLID "b" (8.10.5) {0} struct "foo" variable lval  
+;       TOK_NEW "new" (8.10.9) {0}  
+;          TOK_TYPEID "foo" (8.10.13) {0}  
+;    '=' "=" (8.11.5) {0}  
+;       '.' "." (8.11.2) {0}  
+;          TOK_IDENT "b" (8.11.1) {0} struct "foo" variable lval  
+;          TOK_FIELD "a" (8.11.3) {0} int field  
+;       TOK_INTCON "8" (8.11.7) {0} int const  
+;    '=' "=" (8.12.3) {0}  
+;       TOK_IDENT "a" (8.12.1) {0} int variable lval  
+;       '+' "+" (8.12.13) {0} int vreg  
+;          '*' "*" (8.12.7) {0} int vreg  
+;             TOK_IDENT "a" (8.12.5) {0} int variable lval  
+;             '.' "." (8.12.10) {0}  
+;                TOK_IDENT "b" (8.12.9) {0} struct "foo" variable lval  
+;                TOK_FIELD "a" (8.12.11) {0} int field  
+;          TOK_INTCON "6" (8.12.15) {0} int const  
+;    TOK_BLOCK ";" (8.12.17) {0}  
+;    TOK_CALL "(" (8.14.6) {0}  
+;       TOK_IDENT "puti" (8.14.1) {0} void function  
+;       TOK_IDENT "a" (8.14.7) {0} int variable lval  
+;    TOK_CALL "(" (8.15.6) {0}  
+;       TOK_IDENT "putc" (8.15.1) {0} void function  
+;       TOK_CHARCON "' '" (8.15.7) {0} int const  
+;    TOK_CALL "(" (8.16.6) {0}  
+;       TOK_IDENT "puti" (8.16.1) {0} void function  
+;       '.' "." (8.16.8) {0}  
+;          TOK_IDENT "b" (8.16.7) {0} struct "foo" variable lval  
+;          TOK_FIELD "a" (8.16.9) {0} int field  
+;    TOK_CALL "(" (8.17.6) {0}  
+;       TOK_IDENT "endl" (8.17.1) {0} void function  

@@ -1,0 +1,254 @@
+; TOK_ROOT "<<ROOT>>" (0.0.0) {0}  
+;    TOK_PROTOTYPE "void" (7.28.1) {0}  
+;       TOK_VOID "void" (7.28.1) {0} void  
+;          TOK_DECLID "__assert_fail" (7.28.6) {0} void  
+;       TOK_PARAMLIST "(" (7.28.20) {0}  
+;          TOK_STRING "string" (7.28.21) {1} string  
+;             TOK_DECLID "expr" (7.28.28) {1} string  
+;          TOK_STRING "string" (7.28.34) {1} string  
+;             TOK_DECLID "file" (7.28.41) {1} string  
+;          TOK_INT "int" (7.28.47) {1} int  
+;             TOK_DECLID "line" (7.28.51) {1} int  
+;    TOK_PROTOTYPE "void" (7.29.1) {0}  
+;       TOK_VOID "void" (7.29.1) {0} void  
+;          TOK_DECLID "putb" (7.29.6) {0} void  
+;       TOK_PARAMLIST "(" (7.29.11) {0}  
+;          TOK_INT "int" (7.29.12) {2} int  
+;             TOK_DECLID "b" (7.29.16) {2} int  
+;    TOK_PROTOTYPE "void" (7.30.1) {0}  
+;       TOK_VOID "void" (7.30.1) {0} void  
+;          TOK_DECLID "putc" (7.30.6) {0} void  
+;       TOK_PARAMLIST "(" (7.30.11) {0}  
+;          TOK_INT "int" (7.30.12) {3} int  
+;             TOK_DECLID "c" (7.30.16) {3} int  
+;    TOK_PROTOTYPE "void" (7.31.1) {0}  
+;       TOK_VOID "void" (7.31.1) {0} void  
+;          TOK_DECLID "puti" (7.31.6) {0} void  
+;       TOK_PARAMLIST "(" (7.31.11) {0}  
+;          TOK_INT "int" (7.31.12) {4} int  
+;             TOK_DECLID "i" (7.31.16) {4} int  
+;    TOK_PROTOTYPE "void" (7.32.1) {0}  
+;       TOK_VOID "void" (7.32.1) {0} void  
+;          TOK_DECLID "puts" (7.32.6) {0} void  
+;       TOK_PARAMLIST "(" (7.32.11) {0}  
+;          TOK_STRING "string" (7.32.12) {5} string  
+;             TOK_DECLID "s" (7.32.19) {5} string  
+;    TOK_PROTOTYPE "void" (7.33.1) {0}  
+;       TOK_VOID "void" (7.33.1) {0} void  
+;          TOK_DECLID "endl" (7.33.6) {0} void  
+;       TOK_PARAMLIST "(" (7.33.11) {0}  
+;    TOK_PROTOTYPE "int" (7.34.1) {0}  
+;       TOK_INT "int" (7.34.1) {0} int  
+;          TOK_DECLID "getc" (7.34.5) {0} int  
+;       TOK_PARAMLIST "(" (7.34.10) {0}  
+;    TOK_PROTOTYPE "string" (7.35.1) {0}  
+;       TOK_STRING "string" (7.35.1) {0} string  
+;          TOK_DECLID "getw" (7.35.8) {0} string  
+;       TOK_PARAMLIST "(" (7.35.13) {0}  
+;    TOK_PROTOTYPE "string" (7.36.1) {0}  
+;       TOK_STRING "string" (7.36.1) {0} string  
+;          TOK_DECLID "getln" (7.36.8) {0} string  
+;       TOK_PARAMLIST "(" (7.36.14) {0}  
+;    TOK_PROTOTYPE "[]" (7.37.7) {0}  
+;       TOK_ARRAY "[]" (7.37.7) {0} array  
+;          TOK_STRING "string" (7.37.1) {0} string  
+;          TOK_DECLID "getargv" (7.37.10) {0} string array  
+;       TOK_PARAMLIST "(" (7.37.18) {0}  
+;    TOK_PROTOTYPE "void" (7.38.1) {0}  
+;       TOK_VOID "void" (7.38.1) {0} void  
+;          TOK_DECLID "exit" (7.38.6) {0} void  
+;       TOK_PARAMLIST "(" (7.38.11) {0}  
+;          TOK_INT "int" (7.38.12) {11} int  
+;             TOK_DECLID "status" (7.38.16) {11} int  
+;    TOK_STRUCT "struct" (8.5.1) {0} struct  
+;       TOK_TYPEID "node" (8.5.8) {0} struct  
+;       TOK_STRING "string" (8.6.4) {12} string  
+;          TOK_FIELD "data" (8.6.11) {12} string field  
+;       TOK_TYPEID "node" (8.7.4) {12} struct  
+;          TOK_FIELD "link" (8.7.9) {12} struct "node" field  
+;    TOK_STRUCT "struct" (8.10.1) {0} struct  
+;       TOK_TYPEID "stack" (8.10.8) {0} struct  
+;       TOK_TYPEID "node" (8.11.4) {13} struct  
+;          TOK_FIELD "top" (8.11.9) {13} struct "node" field  
+;    TOK_FUNCTION "int" (8.14.1) {0}  
+;       TOK_INT "int" (8.14.1) {0} int  
+;          TOK_DECLID "empty" (8.14.5) {0} int  
+;       TOK_PARAMLIST "(" (8.14.11) {0}  
+;          TOK_TYPEID "stack" (8.14.12) {14} struct "stack"  
+;             TOK_DECLID "stack" (8.14.18) {14} struct "stack"  
+;       TOK_BLOCK "{" (8.14.25) {0}  
+;          TOK_BLOCK "{" (8.15.4) {14}  
+;             TOK_IF "if" (8.15.5) {15}  
+;                '!' "!" (8.15.9) {0} int vreg  
+;                   TOK_NE "!=" (8.15.17) {15} int vreg  
+;                      TOK_IDENT "stack" (8.15.11) {15} struct "stack" variable param lval  
+;                      TOK_NULL "null" (8.15.20) {15} null const  
+;                TOK_CALL "(" (8.15.41) {15}  
+;                   TOK_IDENT "__assert_fail" (8.15.27) {0} void function  
+;                   TOK_STRINGCON ""stack != null"" (8.15.42) {15} string const  
+;                   TOK_STRINGCON ""41-linkedstack.oc"" (8.15.59) {15} string const  
+;                   TOK_INTCON "15" (8.15.80) {15} int const  
+;          TOK_BLOCK ";" (8.15.85) {14}  
+;          TOK_RETURN "return" (8.16.4) {14}  
+;             TOK_EQ "==" (8.16.21) {14} int vreg  
+;                '.' "." (8.16.16) {0} struct "node" lval vaddr  
+;                   TOK_IDENT "stack" (8.16.11) {15} struct "stack" variable param lval  
+;                   TOK_FIELD "top" (8.16.17) {0} struct field  
+;                TOK_NULL "null" (8.16.24) {14} null const  
+;    TOK_FUNCTION "stack" (8.19.1) {0}  
+;       TOK_TYPEID "stack" (8.19.1) {0} struct "stack"  
+;          TOK_DECLID "new_stack" (8.19.7) {0} struct "stack"  
+;       TOK_PARAMLIST "(" (8.19.17) {0}  
+;       TOK_BLOCK "{" (8.19.20) {0}  
+;          TOK_VARDECL "=" (8.20.16) {17}  
+;             TOK_TYPEID "stack" (8.20.4) {17} struct "stack"  
+;                TOK_DECLID "stack" (8.20.10) {17} struct "stack" variable lval  
+;             TOK_NEW "new" (8.20.18) {0} struct "stack" vreg  
+;                TOK_TYPEID "stack" (8.20.22) {17} struct "stack"  
+;          '=' "=" (8.21.14) {17}  
+;             '.' "." (8.21.9) {0} struct "node" lval vaddr  
+;                TOK_IDENT "stack" (8.21.4) {17} struct "stack" variable lval  
+;                TOK_FIELD "top" (8.21.10) {0} struct field  
+;             TOK_NULL "null" (8.21.16) {17} null const  
+;          TOK_RETURN "return" (8.22.4) {17}  
+;             TOK_IDENT "stack" (8.22.11) {17} struct "stack" variable lval  
+;    TOK_FUNCTION "void" (8.25.1) {0}  
+;       TOK_VOID "void" (8.25.1) {0} void  
+;          TOK_DECLID "push" (8.25.6) {0} void  
+;       TOK_PARAMLIST "(" (8.25.11) {0}  
+;          TOK_TYPEID "stack" (8.25.12) {18} struct "stack"  
+;             TOK_DECLID "stack" (8.25.18) {18} struct "stack"  
+;          TOK_STRING "string" (8.25.25) {18} string  
+;             TOK_DECLID "str" (8.25.32) {18} string  
+;       TOK_BLOCK "{" (8.25.37) {0}  
+;          TOK_BLOCK "{" (8.26.4) {18}  
+;             TOK_IF "if" (8.26.5) {19}  
+;                '!' "!" (8.26.9) {0} int vreg  
+;                   TOK_NE "!=" (8.26.17) {19} int vreg  
+;                      TOK_IDENT "stack" (8.26.11) {19} struct "stack" variable param lval  
+;                      TOK_NULL "null" (8.26.20) {19} null const  
+;                TOK_CALL "(" (8.26.41) {19}  
+;                   TOK_IDENT "__assert_fail" (8.26.27) {0} void function  
+;                   TOK_STRINGCON ""stack != null"" (8.26.42) {19} string const  
+;                   TOK_STRINGCON ""41-linkedstack.oc"" (8.26.59) {19} string const  
+;                   TOK_INTCON "26" (8.26.80) {19} int const  
+;          TOK_BLOCK ";" (8.26.85) {18}  
+;          TOK_VARDECL "=" (8.27.13) {18}  
+;             TOK_TYPEID "node" (8.27.4) {18} struct "node"  
+;                TOK_DECLID "tmp" (8.27.9) {18} struct "node" variable lval  
+;             TOK_NEW "new" (8.27.15) {0} struct "node" vreg  
+;                TOK_TYPEID "node" (8.27.19) {18} struct "node"  
+;          '=' "=" (8.28.13) {18}  
+;             '.' "." (8.28.7) {0} string lval vaddr  
+;                TOK_IDENT "tmp" (8.28.4) {18} struct "node" variable lval  
+;                TOK_FIELD "data" (8.28.8) {0} string field  
+;             TOK_IDENT "str" (8.28.15) {19} string variable param lval  
+;          '=' "=" (8.29.13) {18}  
+;             '.' "." (8.29.7) {0} struct "node" lval vaddr  
+;                TOK_IDENT "tmp" (8.29.4) {18} struct "node" variable lval  
+;                TOK_FIELD "link" (8.29.8) {0} struct field  
+;             '.' "." (8.29.20) {0} struct "node" lval vaddr  
+;                TOK_IDENT "stack" (8.29.15) {19} struct "stack" variable param lval  
+;                TOK_FIELD "top" (8.29.21) {0} struct field  
+;          '=' "=" (8.30.14) {18}  
+;             '.' "." (8.30.9) {0} struct "node" lval vaddr  
+;                TOK_IDENT "stack" (8.30.4) {19} struct "stack" variable param lval  
+;                TOK_FIELD "top" (8.30.10) {0} struct field  
+;             TOK_IDENT "tmp" (8.30.16) {18} struct "node" variable lval  
+;    TOK_FUNCTION "string" (8.33.1) {0}  
+;       TOK_STRING "string" (8.33.1) {0} string  
+;          TOK_DECLID "pop" (8.33.8) {0} string  
+;       TOK_PARAMLIST "(" (8.33.12) {0}  
+;          TOK_TYPEID "stack" (8.33.13) {21} struct "stack"  
+;             TOK_DECLID "stack" (8.33.19) {21} struct "stack"  
+;       TOK_BLOCK "{" (8.33.26) {0}  
+;          TOK_BLOCK "{" (8.34.4) {21}  
+;             TOK_IF "if" (8.34.5) {22}  
+;                '!' "!" (8.34.9) {0} int vreg  
+;                   TOK_NE "!=" (8.34.17) {22} int vreg  
+;                      TOK_IDENT "stack" (8.34.11) {22} struct "stack" variable param lval  
+;                      TOK_NULL "null" (8.34.20) {22} null const  
+;                TOK_CALL "(" (8.34.41) {22}  
+;                   TOK_IDENT "__assert_fail" (8.34.27) {0} void function  
+;                   TOK_STRINGCON ""stack != null"" (8.34.42) {22} string const  
+;                   TOK_STRINGCON ""41-linkedstack.oc"" (8.34.59) {22} string const  
+;                   TOK_INTCON "34" (8.34.80) {22} int const  
+;          TOK_BLOCK ";" (8.34.85) {21}  
+;          TOK_BLOCK "{" (8.35.4) {21}  
+;             TOK_IF "if" (8.35.5) {24}  
+;                '!' "!" (8.35.9) {0} int vreg  
+;                   '!' "!" (8.35.11) {0} int vreg  
+;                      TOK_CALL "(" (8.35.19) {24}  
+;                         TOK_IDENT "empty" (8.35.13) {0} int function  
+;                         TOK_IDENT "stack" (8.35.20) {22} struct "stack" variable param lval  
+;                TOK_CALL "(" (8.35.43) {24}  
+;                   TOK_IDENT "__assert_fail" (8.35.29) {0} void function  
+;                   TOK_STRINGCON ""! empty (stack)"" (8.35.44) {24} string const  
+;                   TOK_STRINGCON ""41-linkedstack.oc"" (8.35.63) {24} string const  
+;                   TOK_INTCON "35" (8.35.84) {24} int const  
+;          TOK_BLOCK ";" (8.35.89) {21}  
+;          TOK_VARDECL "=" (8.36.15) {21}  
+;             TOK_STRING "string" (8.36.4) {21} string  
+;                TOK_DECLID "tmp" (8.36.11) {21} string variable lval  
+;             '.' "." (8.36.26) {0} string lval vaddr  
+;                '.' "." (8.36.22) {0} struct "node" lval vaddr  
+;                   TOK_IDENT "stack" (8.36.17) {22} struct "stack" variable param lval  
+;                   TOK_FIELD "top" (8.36.23) {0} struct field  
+;                TOK_FIELD "data" (8.36.27) {0} string field  
+;          '=' "=" (8.37.14) {21}  
+;             '.' "." (8.37.9) {0} struct "node" lval vaddr  
+;                TOK_IDENT "stack" (8.37.4) {22} struct "stack" variable param lval  
+;                TOK_FIELD "top" (8.37.10) {0} struct field  
+;             '.' "." (8.37.25) {0} struct "node" lval vaddr  
+;                '.' "." (8.37.21) {0} struct "node" lval vaddr  
+;                   TOK_IDENT "stack" (8.37.16) {22} struct "stack" variable param lval  
+;                   TOK_FIELD "top" (8.37.22) {0} struct field  
+;                TOK_FIELD "link" (8.37.26) {0} struct field  
+;          TOK_RETURN "return" (8.38.4) {21}  
+;             TOK_IDENT "tmp" (8.38.11) {21} string variable lval  
+;    TOK_VARDECL "=" (8.43.15) {0}  
+;       TOK_ARRAY "[]" (8.43.7) {0} array  
+;          TOK_STRING "string" (8.43.1) {0} string  
+;          TOK_DECLID "argv" (8.43.10) {0} string array variable lval  
+;       TOK_CALL "(" (8.43.25) {0}  
+;          TOK_IDENT "getargv" (8.43.17) {0} string array function  
+;    TOK_VARDECL "=" (8.44.13) {0}  
+;       TOK_TYPEID "stack" (8.44.1) {0} struct "stack"  
+;          TOK_DECLID "stack" (8.44.7) {0} struct "stack" variable lval  
+;       TOK_CALL "(" (8.44.25) {0}  
+;          TOK_IDENT "new_stack" (8.44.15) {0} struct "new_stack" function  
+;    TOK_VARDECL "=" (8.45.10) {0}  
+;       TOK_INT "int" (8.45.1) {0} int  
+;          TOK_DECLID "argi" (8.45.5) {0} int variable lval  
+;       TOK_INTCON "0" (8.45.12) {0} int const  
+;    TOK_WHILE "while" (8.47.1) {0}  
+;       TOK_NE "!=" (8.47.19) {0} int vreg  
+;          TOK_INDEX "[" (8.47.12) {0} string lval vaddr  
+;             TOK_IDENT "argv" (8.47.8) {0} string array variable lval  
+;             TOK_IDENT "argi" (8.47.13) {0} int variable lval  
+;          TOK_NULL "null" (8.47.22) {0} null const  
+;       TOK_BLOCK "{" (8.47.28) {0}  
+;          TOK_CALL "(" (8.48.9) {26}  
+;             TOK_IDENT "push" (8.48.4) {0} void function  
+;             TOK_IDENT "stack" (8.48.10) {0} struct "stack" variable lval  
+;             TOK_INDEX "[" (8.48.21) {0} string lval vaddr  
+;                TOK_IDENT "argv" (8.48.17) {0} string array variable lval  
+;                TOK_IDENT "argi" (8.48.22) {0} int variable lval  
+;          '=' "=" (8.49.9) {26}  
+;             TOK_IDENT "argi" (8.49.4) {0} int variable lval  
+;             '+' "+" (8.49.16) {26} int vreg  
+;                TOK_IDENT "argi" (8.49.11) {0} int variable lval  
+;                TOK_INTCON "1" (8.49.18) {26} int const  
+;    TOK_WHILE "while" (8.52.1) {0}  
+;       '!' "!" (8.52.8) {0} int vreg  
+;          TOK_CALL "(" (8.52.16) {0}  
+;             TOK_IDENT "empty" (8.52.10) {0} int function  
+;             TOK_IDENT "stack" (8.52.17) {0} struct "stack" variable lval  
+;       TOK_BLOCK "{" (8.52.25) {0}  
+;          TOK_CALL "(" (8.53.9) {27}  
+;             TOK_IDENT "puts" (8.53.4) {0} void function  
+;             TOK_CALL "(" (8.53.14) {27}  
+;                TOK_IDENT "pop" (8.53.10) {0} string function  
+;                TOK_IDENT "stack" (8.53.15) {0} struct "stack" variable lval  
+;          TOK_CALL "(" (8.54.9) {27}  
+;             TOK_IDENT "endl" (8.54.4) {0} void function  

@@ -1,0 +1,62 @@
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c symbol_table.cpp
+symbol_table.cpp: In function ‘int symbol_function(astree*, FILE*)’:
+symbol_table.cpp:415:4: error: expected ‘}’ before ‘else’
+    else if (temp_params->children.at(0)->symbol == TOK_INT)
+    ^
+symbol_table.cpp:437:7: error: ‘else’ without a previous ‘if’
+       else if (temp_params->symbol == TOK_INT)
+       ^
+symbol_table.cpp:437:16: error: ‘temp_params’ was not declared in this scope
+       else if (temp_params->symbol == TOK_INT)
+                ^
+symbol_table.cpp:439:4: error: ‘sym_param’ was not declared in this scope
+    sym_param->attributes.set(ATTR_int);
+    ^
+symbol_table.cpp:445:4: error: ‘sym_param’ was not declared in this scope
+    sym_param->attributes.set(ATTR_string);
+    ^
+symbol_table.cpp:451:4: error: ‘sym_param’ was not declared in this scope
+    sym_param->attributes.set(ATTR_struct);
+    ^
+symbol_table.cpp:458:7: error: ‘sym_param’ was not declared in this scope
+       sym_param->fields = NULL;
+       ^
+symbol_table.cpp:461:7: error: ‘temp_params’ was not declared in this scope
+       temp_params->lloc.blocknr = block_depth;
+       ^
+symbol_table.cpp: At global scope:
+symbol_table.cpp:469:3: error: ‘symbol_stack’ does not name a type
+   symbol_stack.back()->insert ({tree->children.at(0)->children.back()->lexinfo, temp_sym});
+   ^
+symbol_table.cpp:469:90: error: expected unqualified-id before ‘)’ token
+   symbol_stack.back()->insert ({tree->children.at(0)->children.back()->lexinfo, temp_sym});
+                                                                                          ^
+symbol_table.cpp:470:3: error: ‘tree’ does not name a type
+   tree->children.at(2)->lloc.blocknr = current_block();
+   ^
+symbol_table.cpp:471:16: error: expected constructor, destructor, or type conversion before ‘;’ token
+   symbol_push();
+                ^
+symbol_table.cpp:472:3: error: expected unqualified-id before ‘for’
+   for(u_int i = 0; i < tree->children.at(1)->children.size(); i++) {
+   ^
+symbol_table.cpp:472:20: error: ‘i’ does not name a type
+   for(u_int i = 0; i < tree->children.at(1)->children.size(); i++) {
+                    ^
+symbol_table.cpp:472:63: error: ‘i’ does not name a type
+   for(u_int i = 0; i < tree->children.at(1)->children.size(); i++) {
+                                                               ^
+symbol_table.cpp:539:10: error: expected constructor, destructor, or type conversion before ‘(’ token
+   fprintf(fd_sym, "\n");
+          ^
+symbol_table.cpp:540:3: error: expected unqualified-id before ‘return’
+   return 1;
+   ^
+symbol_table.cpp:541:1: error: expected declaration before ‘}’ token
+ }
+ ^
+symbol_table.cpp: In function ‘int symbol_function(astree*, FILE*)’:
+symbol_table.cpp:468:5: warning: control reaches end of non-void function [-Wreturn-type]
+     }
+     ^
+make: *** [symbol_table.o] Error 1
